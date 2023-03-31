@@ -1,0 +1,53 @@
+<form method="post">
+  <h1>Nueva Venta</h1>
+  <h4>Dish</h4>
+  <select name="Dish">
+    <option value="Dish 1">Dish 1</option>
+    <option value="Dish 2" selected>Dish 2</option>
+    <option value="Dish 3">Dish 3</option>
+  </select>
+  <button type="submit">Añadir</button>
+  <hr>
+  <table>
+    <thead>
+    <tr class="text-center">
+      <th>ID</th>
+      <th>Dish</th>
+      <th>costo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="text-center">
+      <td>1</td>
+      <td>Dish 1</td>
+      <td>50 Bs.</td>
+    </tr>
+    <tr class="text-center">
+      <td>2</td>
+      <td>Dish 2</td>
+      <td>80 Bs.</td>
+    </tr>
+
+    </tbody>
+  </table>
+  <h4>Total: 130 bs.</h4>
+  <hr>
+  <h4>Fecha</h4>
+  <input
+    #cost
+    type="String"
+    name="cost"
+    required="required"
+  />
+  <h4>Empleado</h4>
+  <select name="Empleado">
+    <option value="Empleado 1">Empleado 1</option>
+    <option value="Empleado 2" selected>Empleado 2</option>
+    <option value="Empleado 3">Empleado 3</option>
+  </select>
+  <a routerLink="/">
+    <button type="submit">Save</button>
+  </a>
+  <br>
+</form>
+

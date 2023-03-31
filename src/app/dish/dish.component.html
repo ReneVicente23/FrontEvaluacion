@@ -1,0 +1,28 @@
+<form method="post">
+  <h1>Nueva Venta</h1>
+  <h4>Nombre</h4>
+  <input
+    #name
+    type="name"
+    name="name"
+    required="required"
+  />
+  <h4>Costo</h4>
+  <input
+    #cost
+    type="number"
+    name="cost"
+    required="required"
+  />
+  <h4>Costo Elavoracion</h4>
+  <input
+    #costoElav
+    type="number"
+    name="costoElav"
+    required="required"
+  />
+  <a routerLink="/">
+    <button type="submit" (click)="getInputValue(name.value, cost.value, costoElav.value)">Save</button>
+  </a>
+  <br>
+</form>
